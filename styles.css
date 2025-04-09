@@ -128,7 +128,7 @@
 
 .banner {
   background: #e7e7ea;
-  /* width: 100vw; */
+  /* width:391px; */
   height: 306px;
   top: 231px;
   display: flex;
@@ -382,9 +382,185 @@
   background: #303030;
 }
 
+.container-section2 {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+
+.caneca {
+  height: 390px;
+  overflow: hidden;
+}
+.caneca img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-caneca {
+  height: 390px;
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.texto-caneca h1 {
+  width: 255px;
+  height: 34px;
+  font-family: Nunito;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+}
+
+.info-caneca {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.info-caneca p {
+  font-family: Nunito;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 5%;
+  text-align: left;
+}
+
+.container-section3 {
+  background: #dedede;
+  display: flex;
+  flex-direction: column;
+  /* gap: 3vw; */
+}
+
+.img-section3 {
+  height: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-section3 img {
+  width: 90%;
+  height: 90%;
+}
+
+.titulo-section3 {
+  width: 100%;
+  height: 5rem;
+  /* top: 230vh; */
+  left: 2vh;
+}
+
+.titulo-section3 h1 {
+  font-family: Nunito;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.infos-section3 {
+  position: absolute;
+  background: #dedede;
+  width: 100%;
+  height: 18rem;
+  top: 320vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.texto-section3 {
+  width: 100%;
+  height: 276px;
+  display: flex;
+}
+
+.texto-section3 p {
+  font-family: Nunito;
+  font-weight: 400;
+  font-size: 12px;
+  /* line-height: 140%; */
+  letter-spacing: 5%;
+  margin-left: 13px;
+}
+
+.pins {
+  background-color: #005cff;
+  width: 180px;
+  height: 60px;
+  left: 19px;
+  top: 2314px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2vh;
+}
+
+.pins img {
+  width: 30px;
+  height: 30px;
+  top: 2329px;
+  left: 34px;
+}
+
+.container-section4 {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  margin-top: 50vh;
+
+  height: 85vh;
+}
+
+.banner-section5 {
+  position: relative;
+  height: 80vh;
+  top: 10vh;
+  background-image: url(assets/quarto-baner-mobile.png);
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto-section5 {
+  position: absolute;
+  background-color: #005cff;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.texto-section5 p {
+  font-family: Nunito;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
 @media screen and (min-width: 1024px) {
   .cupom {
-  
     height: auto;
     flex-direction: row;
     justify-content: center;
@@ -567,6 +743,119 @@
   .indicador {
     display: none;
   }
+
+  .container-section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+    width: 80vw;
+    max-width: 1177px;
+    height: 90vh;
+    max-height: 747px;
+    top: auto;
+    left: auto;
+    margin: 5vh auto;
+  }
+
+  .caneca {
+    background: #c2c2c2;
+    width: 100vw;
+    height: 100%;
+    left: 0.5px;
+  }
+
+  .info-caneca {
+    width: 487px;
+    top: 105.5px;
+    left: 690px;
+    gap: 22px;
+    margin-right: 2vh;
+  }
+
+  .info-caneca p {
+    font-family: Nunito;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 5%;
+    text-align: left;
+  }
+
+  .container-section3 {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 20%;
+    position: relative;
+  }
+
+  .img-section3 {
+    position: absolute;
+    height: 90%;
+    width: 35vw;
+    right: 10vw;
+  }
+
+  .infos-section3 {
+    flex: none;
+    width: 50vw;
+    position: absolute;
+    left: 20vw;
+    top: 20vh;
+    height: 60vh;
+    width: 32vw;
+    display: flex;
+  }
+
+  .titulo-section3 {
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 140%;
+    letter-spacing: 4%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4f4f4f;
+  }
+
+  .texto-section3 p {
+    font-family: Nunito;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 5%;
+    color: #4f4f4f;
+  }
+
+  .container-section4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+    width: 80vw;
+    max-width: 1177px;
+    height: 90vh;
+    max-height: 747px;
+    top: auto;
+    left: auto;
+    margin: 5vh auto;
+  }
+
+  .banner-section5{
+    background-image: url(assets/quarto-banner.png);
+  }
+
+  .texto-section5 {
+    width: 100%;
+  }
+
+
 }
 @media screen and (max-width: 768px) {
   .menu-hamburguer p,
