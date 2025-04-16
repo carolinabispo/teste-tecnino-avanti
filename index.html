@@ -18,28 +18,35 @@
         rel="stylesheet">
 
     <title>Avanti</title>
-    <script src="script.js"></script>
+
 </head>
 
 <body>
-    <header>
-        <div class="cupom">
-            <div class="desconto">
-                Ganhe <span class="desconto_valor">R$10,00</span> de desconto no seu primeiro pedido.
-            </div>
-            <div class="cupom_texto">
-                Utilize o cupom <span class="desconto_dez">DESCONTO10</span>
-            </div>
-        </div>
-        <div class="navbar">
-            <div class="logo"> <img src="/assets/logo-avanti.png" alt="logotipo-avanti"></div>
+    <div class="pagina">
+        <main>
 
-            <div class="search-bar"> <input id="search-text" type="text" placeholder="Digite o que voce procura"> <img
-                    id="lupa" src="assets/icone-lupa.png" alt=""></div>
-
-            <div class="perfil">
-                <img src="assets/icon-user.png" alt="">
+        </main>
+        <header>
+            <div class="cupom">
+                <div class="desconto">
+                    Ganhe <span class="desconto_valor">R$10,00</span> de desconto no seu primeiro pedido.
+                </div>
+                <div class="cupom_texto">
+                    Utilize o cupom <span class="desconto_dez">DESCONTO10</span>
+                </div>
             </div>
+            <div class="navbar">
+                <div class="logo"> <img src="/assets/logo-avanti.png" alt="logotipo-avanti"></div>
+
+                <div class="search-bar">
+                    <input id="search-text" type="text" placeholder="Digite o que voce procura">
+                    <img id="lupa" src="assets/icone-lupa.png" alt="">
+                    <div id="resultado"> </div>
+                </div>
+
+                <div class="perfil">
+                    <img src="assets/icon-user.png" alt="">
+                </div>
 
             <div class="menu-hamburguer">
                 <img src="assets/menu-hamburguer.png" alt="">
@@ -57,259 +64,517 @@
                 <img id="numero-compras" src="assets/numero-compras.png" alt="">
                 <img src="/assets/icone-carrinho-compras.png" alt="carrinho-de-compras">
             </div>
-
-            <div class="menu-flutuante">
-                <div> <summary> </summary></div>
-                <div></div>
-                <div></div>
-            </div>
         </div>
 
 
         </div>
     </header>
 
-    <section class="banner">
-        <div class="img-banner"> <img src="assets/img-baner.png" alt="">
-        </div>
-        <div id="img-desktop"> <img src="assets/img-banner-desktop.png" alt="">
-        </div>
-        <div class="titulo">
-            <h1>Super <span>Sale</span></h1>
-            <h2>Selected items up to</h2>
-            <h2 id="desconto">50% OFF</h2>
-        </div>
-    </section>
+        <section class="banner">
+            <div class="img-banner"> <img src="assets/img-baner.png" alt="">
+            </div>
+            <div id="img-desktop"> <img src="assets/img-banner-desktop.png" alt="">
+            </div>
+            <div class="titulo">
+                <h1>Super <span>Sale</span></h1>
+                <h2>Selected items up to</h2>
+                <h2 id="desconto">50% OFF</h2>
+            </div>
+        </section>
 
-    <section class="roupas">
-        <div class="infos">
-            <p>Lançamentos</p>
-            <p>Ver mais</p>
-        </div>
-        <div class="container">
+        <section class="roupas">
+            <div class="infos">
+                <p>Lançamentos</p>
+                <p>Ver mais</p>
+            </div>
+            <div class="container">
 
-            <div class="carrossel">
-                <div class="card"> <img src="assets/img-card.png" alt="">
-                    <div class="title">
-                        <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
-                    </div>
-                    <div class="precos">
-                        <div class="valores">
-                            <p class="p1">R$ 100,00</p>
-                            <p class="p2">R$ 79,90</p>
+                <div class="carrossel">
+                    <div class="card"> <img src="assets/img-card.png" alt="">
+                        <div class="title">
+                            <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
                         </div>
-                        <div class="cashback">
-                            <span>10% OFF</span>
+                        <div class="precos">
+                            <div class="valores">
+                                <p class="p1">R$ 100,00</p>
+                                <p class="p2">R$ 79,90</p>
+                            </div>
+                            <div class="cashback">
+                                <span>10% OFF</span>
+                            </div>
+                        </div>
+                        <div class="parcelas">
+                            <p>Ou em até <span>10x de R$7,90</span></p>
+                        </div>
+                        <div class="buttom">
+                            <span>Comprar</span>
                         </div>
                     </div>
-                    <div class="parcelas">
-                        <p>Ou em até <span>10x de R$7,90</span></p>
+                    <div class="card"> <img src="assets/img-card.png" alt="">
+                        <div class="title">
+                            <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
+                        </div>
+
+                        <div class="precos">
+                            <div class="valores">
+                                <p class="p1">R$ 100,00</p>
+                                <p class="p2">R$ 79,90</p>
+                            </div>
+                            <div class="cashback">
+                                <span>10% OFF</span>
+                            </div>
+                        </div>
+                        <div class="parcelas">
+                            <p>Ou em até <span>10x de R$7,90</span></p>
+                        </div>
+                        <div class="buttom">
+                            <span>Comprar</span>
+                        </div>
                     </div>
-                    <div class="buttom">
-                        <span>Comprar</span>
+                    <div class="card"> <img src="assets/img-card.png" alt="">
+                        <div class="title">
+                            <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
+                        </div>
+                        <div class="precos">
+                            <div class="valores">
+                                <p class="p1">R$ 100,00</p>
+                                <p class="p2">R$ 79,90</p>
+                            </div>
+                            <div class="cashback">
+                                <span>10% OFF</span>
+                            </div>
+                        </div>
+                        <div class="parcelas">
+                            <p>Ou em até <span>10x de R$7,90</span></p>
+                        </div>
+                        <div class="buttom">
+                            <span>Comprar</span>
+                        </div>
+                    </div>
+                    <div class="card"> <img src="assets/img-card.png" alt="">
+                        <div class="title">
+                            <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
+                        </div>
+                        <div class="precos">
+                            <div class="valores">
+                                <p class="p1">R$ 100,00</p>
+                                <p class="p2">R$ 79,90</p>
+                            </div>
+                            <div class="cashback">
+                                <span>10% OFF</span>
+                            </div>
+                        </div>
+                        <div class="parcelas">
+                            <p>Ou em até <span>10x de R$7,90</span></p>
+                        </div>
+                        <div class="buttom">
+                            <span>Comprar</span>
+                        </div>
+                    </div>
+                    <div class="card"> <img src="assets/img-card.png" alt="">
+                        <div class="title">
+                            <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
+                        </div>
+                        <div class="precos">
+                            <div class="valores">
+                                <p class="p1">R$ 100,00</p>
+                                <p class="p2">R$ 79,90</p>
+                            </div>
+                            <div class="cashback">
+                                <span>10% OFF</span>
+                            </div>
+                        </div>
+                        <div class="parcelas">
+                            <p>Ou em até <span>10x de R$7,90</span></p>
+                        </div>
+                        <div class="buttom">
+                            <span>Comprar</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="indicador">
+                    <span class="dot ativo"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-section2">
+                <div class="caneca">
+                    <img src="assets/img-section2.png" alt="imagem de uma caneca preta escrita avanti">
+                </div>
+                <div class="texto-caneca">
+                    <h1>
+                        Lorem ipsum
+                    </h1>
+                    <div class="info-caneca">
+                        <p>
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus
+                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                            massa
+                            quis enim
+                        </p>
+                        <p>
+                            Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut
+                            vestibulum turpis eget mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin
+                            porta
+                            nec eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna nisl, vel
+                            porttitor augue placerat et
+                        </p>
                     </div>
                 </div>
-                <div class="card"> <img src="assets/img-card.png" alt="">
-                    <div class="title">
-                        <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-section3">
+                <div class="img-section3">
+                    <img src="assets/segundo banner.png" alt="">
+                </div>
+                <div class="infos-section3">
+                    <div class="titulo-section3">
+                        <h1> Lorem ipsum</h1>
                     </div>
-                    <!-- <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3> -->
-                    <div class="precos">
-                        <div class="valores">
-                            <p class="p1">R$ 100,00</p>
-                            <p class="p2">R$ 79,90</p>
+                    <div class="texto-section3">
+                        <div class="pins">
+                            <img src="assets/map-pin.png" alt="">
                         </div>
-                        <div class="cashback">
-                            <span>10% OFF</span>
+                        <p> Aenean massa. Cum sociis natoque penatibus et magnis dis
+                            parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                            pretium
+                            quis, sem.</p>
+                    </div>
+                    <div class="texto-section3">
+                        <div class="pins">
+                            <img src="assets/map-pin.png" alt="">
                         </div>
+                        <p> Aenean massa. Cum sociis natoque penatibus et magnis dis
+                            parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                            pretium
+                            quis, sem.</p>
                     </div>
-                    <div class="parcelas">
-                        <p>Ou em até <span>10x de R$7,90</span></p>
+                    <div class="texto-section3">
+                        <div class="pins">
+                            <img src="assets/map-pin.png" alt="">
+                        </div>
+                        <p> Aenean massa. Cum sociis natoque penatibus et magnis dis
+                            parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                            pretium
+                            quis, sem.</p>
                     </div>
-                    <div class="buttom">
-                        <span>Comprar</span>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section>
+            <div class="container-section4">
+                <div class="caneca">
+                    <img src="assets/img-section2.png" alt="imagem de uma caneca preta escrita avanti">
+                </div>
+                <div class="texto-caneca">
+                    <h1>
+                        Lorem ipsum
+                    </h1>
+                    <div class="info-caneca">
+                        <p>
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus
+                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                            massa
+                            quis enim
+                        </p>
+                        <p>
+                            Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut
+                            vestibulum turpis eget mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin
+                            porta
+                            nec eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna nisl, vel
+                            porttitor augue placerat et
+                        </p>
                     </div>
                 </div>
-                <div class="card"> <img src="assets/img-card.png" alt="">
-                    <div class="title">
-                        <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
-                    </div>
-                    <!-- <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3> -->
-                    <div class="precos">
-                        <div class="valores">
-                            <p class="p1">R$ 100,00</p>
-                            <p class="p2">R$ 79,90</p>
+            </div>
+        </section>
+
+
+        <section class="roupas2">
+            <div class="infos-roupas2">
+                <p>Lançamentos</p>
+                <p> <u>Ver mais </u></p>
+            </div>
+            <div class="container">
+
+                <div class="carrossel">
+                    <div class="card"> <img src="assets/img-card.png" alt="">
+                        <div class="title">
+                            <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
                         </div>
-                        <div class="cashback">
-                            <span>10% OFF</span>
+                        <div class="precos">
+                            <div class="valores">
+                                <p class="p1">R$ 100,00</p>
+                                <p class="p2">R$ 79,90</p>
+                            </div>
+                            <div class="cashback">
+                                <span>10% OFF</span>
+                            </div>
+                        </div>
+                        <div class="parcelas">
+                            <p>Ou em até <span>10x de R$7,90</span></p>
+                        </div>
+                        <div class="buttom">
+                            <span>Comprar</span>
                         </div>
                     </div>
-                    <div class="parcelas">
-                        <p>Ou em até <span>10x de R$7,90</span></p>
+                    <div class="card"> <img src="assets/img-card.png" alt="">
+                        <div class="title">
+                            <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
+                        </div>
+                        <!-- <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3> -->
+                        <div class="precos">
+                            <div class="valores">
+                                <p class="p1">R$ 100,00</p>
+                                <p class="p2">R$ 79,90</p>
+                            </div>
+                            <div class="cashback">
+                                <span>10% OFF</span>
+                            </div>
+                        </div>
+                        <div class="parcelas">
+                            <p>Ou em até <span>10x de R$7,90</span></p>
+                        </div>
+                        <div class="buttom">
+                            <span>Comprar</span>
+                        </div>
                     </div>
-                    <div class="buttom">
-                        <span>Comprar</span>
+                    <div class="card"> <img src="assets/img-card.png" alt="">
+                        <div class="title">
+                            <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
+                        </div>
+                        <!-- <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3> -->
+                        <div class="precos">
+                            <div class="valores">
+                                <p class="p1">R$ 100,00</p>
+                                <p class="p2">R$ 79,90</p>
+                            </div>
+                            <div class="cashback">
+                                <span>10% OFF</span>
+                            </div>
+                        </div>
+                        <div class="parcelas">
+                            <p>Ou em até <span>10x de R$7,90</span></p>
+                        </div>
+                        <div class="buttom">
+                            <span>Comprar</span>
+                        </div>
                     </div>
+                    <div class="card"> <img src="assets/img-card.png" alt="">
+                        <div class="title">
+                            <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
+                        </div>
+                        <div class="precos">
+                            <div class="valores">
+                                <p class="p1">R$ 100,00</p>
+                                <p class="p2">R$ 79,90</p>
+                            </div>
+                            <div class="cashback">
+                                <span>10% OFF</span>
+                            </div>
+                        </div>
+                        <div class="parcelas">
+                            <p>Ou em até <span>10x de R$7,90</span></p>
+                        </div>
+                        <div class="buttom">
+                            <span>Comprar</span>
+                        </div>
+                    </div>
+                    <div class="card"> <img src="assets/img-card.png" alt="">
+                        <div class="title">
+                            <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
+                        </div>
+                        <div class="precos">
+                            <div class="valores">
+                                <p class="p1">R$ 100,00</p>
+                                <p class="p2">R$ 79,90</p>
+                            </div>
+                            <div class="cashback">
+                                <span>10% OFF</span>
+                            </div>
+                        </div>
+                        <div class="parcelas">
+                            <p>Ou em até <span>10x de R$7,90</span></p>
+                        </div>
+                        <div class="buttom">
+                            <span>Comprar</span>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="card"> <img src="assets/img-card.png" alt="">
-                    <div class="title">
-                        <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
-                    </div>
-                    <div class="precos">
-                        <div class="valores">
-                            <p class="p1">R$ 100,00</p>
-                            <p class="p2">R$ 79,90</p>
-                        </div>
-                        <div class="cashback">
-                            <span>10% OFF</span>
-                        </div>
-                    </div>
-                    <div class="parcelas">
-                        <p>Ou em até <span>10x de R$7,90</span></p>
-                    </div>
-                    <div class="buttom">
-                        <span>Comprar</span>
-                    </div>
+                <div class="indicador">
+                    <span class="dot ativo"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
                 </div>
-                <div class="card"> <img src="assets/img-card.png" alt="">
-                    <div class="title">
-                        <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
-                    </div>
-                    <div class="precos">
-                        <div class="valores">
-                            <p class="p1">R$ 100,00</p>
-                            <p class="p2">R$ 79,90</p>
-                        </div>
-                        <div class="cashback">
-                            <span>10% OFF</span>
-                        </div>
-                    </div>
-                    <div class="parcelas">
-                        <p>Ou em até <span>10x de R$7,90</span></p>
-                    </div>
-                    <div class="buttom">
-                        <span>Comprar</span>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-section5">
+                <div class="banner-section5">
+                    <div class="texto-section5">
+                        <p>Entre em contato conosco e verifique a disponibilidade para sua região!</p>
                     </div>
                 </div>
 
             </div>
-            <div class="indicador">
-                <span class="dot ativo"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <div class="container-section2">
-            <div class="caneca">
-                <img src="assets/img-section2.png" alt="imagem de uma caneca preta escrita avanti">
-            </div>
-            <div class="texto-caneca">
-                <h1>
-                    Lorem ipsum
-                </h1>
-                <div class="info-caneca">
-                    <p>
-                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-                        quis enim
-                    </p>
-                    <p>
-                        Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut
-                        vestibulum turpis eget mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin porta
-                        nec eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna nisl, vel
-                        porttitor augue placerat et
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section>
-        <div class="container-section3">
-            <div class="img-section3">
-                <img src="assets/segundo banner.png" alt="">
-            </div>
-            <div class="infos-section3">
-                <div class="titulo-section3">
-                    <h1> Lorem ipsum</h1>
+        <section>
+            <div class="container-section6">
+                <div class="title-section6">
+                    <p>Cadastre-se na nossa <span>newsletter</span></p>
                 </div>
-                <div class="texto-section3">
-                    <div class="pins">
-                        <img src="assets/map-pin.png" alt="">
+                <div class="infos-section6">
+
+                    <div class="input-section6">
+                        <input id="input-newsletter" type="text" placeholder="Digite seu nome">
+                        <input id="input-newsletter" type="text" placeholder="Digite seu email">
+                        <div class="checkbox-section6">
+
+                            <label class="custom-checkbox">
+                                <input type="checkbox" />
+                                <span class="checkmark"></span>
+                                <p>Estou de acordo com a <span>Política de Privacidade</span></p>
+                            </label>
+                        </div>
+                        <div class="btn-cadastro">
+                            <button>Cadastrar</button>
+                        </div>
                     </div>
-                    <p> Aenean massa. Cum sociis natoque penatibus et magnis dis
-                        parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-                        pretium
-                        quis, sem.</p>
                 </div>
-                <div class="texto-section3">
-                    <div class="pins">
-                        <img src="assets/map-pin.png" alt="">
+            </div>
+        </section>
+
+        <footer>
+            <div class="conteiner-footer">
+                <div class="logo-footer">
+                    <img src="assets/logo-footer.png" alt="">
+                    <div class="redes-sociais">
+                        <img src="assets/insta.png" alt="">
+                        <img src="assets/facebook.png" alt="">
+                        <img src="assets/youtube.png" alt="">
+                        <img src="assets/logo-tiktok-svgrepo-com.png" alt="">
                     </div>
-                    <p> Aenean massa. Cum sociis natoque penatibus et magnis dis
-                        parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-                        pretium
-                        quis, sem.</p>
                 </div>
-                <div class="texto-section3">
-                    <div class="pins">
-                        <img src="assets/map-pin.png" alt="">
+                <div class="footer-links">
+                    <!-- mobile -->
+                    <details class="footer-section-mobile">
+                        <summary>Institucional <span class="arrow"></span></summary>
+                        <ul>
+                            <li>Sobre Nós</li>
+                            <li>Nossas Lojas</li>
+                            <li>Privacidade e Segurança</li>
+                            <li>Termos e Condições</li>
+                        </ul>
+                    </details>
+
+                    <details class="footer-section-mobile">
+                        <summary>Institucional <span class="arrow"></span></summary>
+                        <ul>
+                            <li>Fale Conosco</li>
+                            <li>Frete e Entrega</li>
+                            <li>Trocas e Devoluções</li>
+                            <li>Formas de Pagamento</li>
+                            <li>FAQ</li>
+                        </ul>
+                    </details>
+
+                    <details class="footer-section-mobile">
+                        <summary>Institucional <span class="arrow"></span></summary>
+                        <ul>
+                            <li><strong>Telefone:</strong> (00) 1234-5678</li>
+                            <li><strong>E-mail:</strong> exemplo@exemplo.com.br</li>
+                            <li><strong>Horário de atendimento:</strong><br>
+                                Segunda a Sábado: 07h00 às 23h00<br>
+                                Domingos e Feriados: 07h00 às 21h00</li>
+                        </ul>
+                    </details>
+
+                    <!-- desktop -->
+
+                    <div class="footer-section-desktop">
+                        <h4>Institucional</h4>
+                        <ul>
+                            <li>Sobre Nós</li>
+                            <li>Nossas Lojas</li>
+                            <li>Privacidade e Segurança</li>
+                            <li>Termos e Condições</li>
+                        </ul>
                     </div>
-                    <p> Aenean massa. Cum sociis natoque penatibus et magnis dis
-                        parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-                        pretium
-                        quis, sem.</p>
+
+                    <div class="footer-section-desktop">
+                        <h4>Central de ajuda</h4>
+                        <ul>
+                            <li>Fale Conosco</li>
+                            <li>Frete e Entrega</li>
+                            <li>Trocas e Devoluções</li>
+                            <li>Formas de Pagamento</li>
+                            <li>FAQ</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section-desktop">
+                        <h4>Atendimento</h4>
+                        <ul>
+                            <li><strong>Telefone:</strong> (00) 1234-5678</li>
+                            <li><strong>E-mail:</strong> exemplo@exemplo.com.br</li>
+                            <li><strong>Horário de atendimento:</strong><br>
+                                Segunda a Sábado: 07h00 às 23h00<br>
+                                Domingos e Feriados: 07h00 às 21h00</li>
+                        </ul>
+                    </div>
                 </div>
-
-
-            </div>
-
-        </div>
-
-
-    </section>
-
-    <section>
-        <div class="container-section4">
-            <div class="caneca">
-                <img src="assets/img-section2.png" alt="imagem de uma caneca preta escrita avanti">
-            </div>
-            <div class="texto-caneca">
-                <h1>
-                    Lorem ipsum
-                </h1>
-                <div class="info-caneca">
-                    <p>
-                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-                        quis enim
-                    </p>
-                    <p>
-                        Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut
-                        vestibulum turpis eget mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin porta
-                        nec eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna nisl, vel
-                        porttitor augue placerat et
-                    </p>
+                <div class="footer-bottom">
+                    <img src="assets/pagamento-footer.png" alt="">
+                </div>
+                <div class="footer-bottom-desktop">
+                    <img src="assets/pagamento-desktop.png" alt="">
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container-section5">
-            <div class="banner-section5">
-                <div class="texto-section5">
-                    <p>Entre em contato conosco e verifique a disponibilidade para sua região!</p>
-                </div>
+        </footer>
+        <div class="info-footer">
+            <div>
+                <p class="info-desktop">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi.
+                </p>
             </div>
-           
+
+            <p class="info-mobile"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea co</p>
+            <div class="img-bottom-footer">
+                <img src="assets/img-bottom-fotter.png" alt="">
+            </div>
         </div>
-    </section>
+    </div>
 
 
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
