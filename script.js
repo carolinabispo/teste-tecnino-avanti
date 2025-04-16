@@ -1,13 +1,15 @@
-const carrossel = document.querySelector(".carrossel");
-const dots = document.querySelectorAll(".dot");
 
-carrossel.addEventListener("scroll", () => {
-  const scrollPosition = carrossel.scrollLeft;
-  const larguraCard = 174 + 10; // largura do card + gap
-  const index = Math.round(scrollPosition / (larguraCard * 2));
+const searchInput = document.getElementById("search-text");
+const resultadoDiv = document.getElementById("resultado"); 
+const lupa = document.getElementById("lupa")
 
-  dots.forEach((dot) => dot.classList.remove("ativo"));
-  if (dots[index]) {
-    dots[index].classList.add("ativo");
-  }
-});
+  lupa.addEventListener('click', ()=>{
+    const value = searchInput.value
+    const formatado = formatString(`Você buscou por: '${value}'`);
+    resultadoDiv.innerText = formatado;
+  })
+
+
+function formatString(value) {
+  return value.toUpperCase().trim();
+}
