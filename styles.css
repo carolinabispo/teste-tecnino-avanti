@@ -95,7 +95,6 @@
   left: 18rem;
   position: absolute;
 }
-
 .search-bar input {
   width: 361px;
   height: 40px;
@@ -337,7 +336,7 @@
   font-size: 11px;
   line-height: 12px;
   letter-spacing: 0%;
-  /* text-align: center; */
+
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -575,13 +574,14 @@
   }
   .menu-hamburguer {
     display: flex;
-
     gap: 2.813rem;
     flex-direction: row;
     position: relative;
     height: 22px;
     top: 45px;
   }
+
+  
 
   .search-bar {
     position: absolute;
@@ -621,7 +621,6 @@
   }
 
   #img-desktop {
-    /* height: 100%;  */
     position: absolute;
     left: 200px;
     top: 151px;
@@ -670,7 +669,6 @@
     align-items: center;
     top: 200px;
   }
-
   .infos {
     height: 27px;
     left: 110px;
@@ -683,7 +681,6 @@
     justify-content: center;
     overflow: visible;
   }
-
   .carrossel {
     width: 1288px;
     height: 478px;
@@ -695,7 +692,7 @@
     overflow: hidden;
     gap: 10px;
   }
-
+  
   .card {
     flex: 1;
     width: auto;
