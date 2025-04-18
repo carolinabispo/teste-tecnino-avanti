@@ -1158,7 +1158,8 @@ details[open] .arrow {
 
   #lupa {
     position: absolute;
-    left: 45rem;
+    /* left: 45rem; */
+    left: 47vw;
   }
 
   .carrinho-compra {
@@ -1268,6 +1269,7 @@ color: #005cff;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-decoration: none;
   }
   .container {
     display: flex;
@@ -1342,7 +1344,7 @@ color: #005cff;
     max-width: 1177px;
     height: 90vh;
     max-height: 747px;
-    margin: 8vh auto;
+    margin: 12vh auto;
   }
 
   .caneca {
