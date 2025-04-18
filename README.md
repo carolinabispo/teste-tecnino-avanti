@@ -17,6 +17,7 @@ Projeto desenvolvido como desafio final, com o objetivo de recriar um layout do 
 https://github.com/carolinabispo/teste-tecnino-avanti.git
 
 ✅ Requisitos Atendidos
+
 1️⃣ Estrutura HTML
 
 
